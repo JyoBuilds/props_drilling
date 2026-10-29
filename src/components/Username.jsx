@@ -1,9 +1,11 @@
-import React from 'react'
-
-const Username = ({name}) => {
+import React, { useContext } from 'react'
+import { UserContext } from "../context/UserContext";
+const Username = () => {
+  const {count,increaseCount}=useContext(UserContext);
   return (
     <div>
-      Username - {name}
+      Username - {count}
+      <button onClick={increaseCount}>Click</button>
     </div>
   )
 }

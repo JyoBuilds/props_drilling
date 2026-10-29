@@ -1,11 +1,11 @@
 import React from 'react'
 import Profile from './Profile'
 
-const Dashboard = ({name}) => {
+const Dashboard = () => {
   return (
     <div>
       <h2>Dashboard</h2>
-      <Profile name={name} />
+      <Profile />
     </div>
   )
 }
